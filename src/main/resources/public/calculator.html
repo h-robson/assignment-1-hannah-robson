@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/calculator.css">
+  <title>Document</title>
+  <script src="./calculator.js" defer></script>
+</head>
+<body>
+    <div>
+        <header style="font-size: 24pt; font-weight:bold; font-family:Arial, Helvetica, sans-serif; background-color: white; margin-top: 50px">Grade Calculator</header>
+        <main>
+          <form method="post" action="/process_form">
+              <fieldset>
+                  <legend class="red_text">Activities</legend>
+                  <p>Give grade to the numeric activities:</p>
+                  <table>
+                  <tr>
+                      <th>Name</th>
+                      <th>Short Name</th>
+                      <th>Weight</th>
+                      <th>Grade</th>
+                      <th>Percent</th>
+                  </tr>
+                  <tr>
+                      <td>Activity 1</td>
+                      <td>A1</td>
+                      <td>
+                          <input type="number"/>
+                      </td>
+                      <td>
+                          <input type="number"/> /
+                          <br>
+                          <input type="number"/>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Activity 2</td>
+                      <td>A2</td>
+                      <td>
+                          <input type="number"/>
+                      </td>
+                      <td>
+                          <input type="number"/> /
+                          <br>
+                          <input type="number"/>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Activity 3</td>
+                      <td>A3</td>
+                      <td>
+                          <input type="number" />
+                      </td>
+                      <td>
+                          <input type="number"/> /
+                          <br>
+                          <input type="number"/>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Activity 4</td>
+                      <td>A4</td>
+                      <td>
+                      <input type="number"/>
+                      </td>
+                      <td>
+                          <input type="number"/> /
+                          <br>
+                          <input type="number"/>
+                      </td>
+                  </tr>      
+                  </table>
+                  <p class="red_text">Result</p>
+                  <p class="button">
+                      <input type="submit" value="WEIGHTED"/>
+                      <input type="submit" value="MEAN">
+                    </p>
+              </fieldset>
+          </form>
+        </main>
+        
+    </div>
+</body>
+</html>
